@@ -185,14 +185,14 @@ public class MainApp extends Application {
             dialogStage.initOwner(primaryStage);
             Scene scene = new Scene(page);
             dialogStage.setScene(scene);
-            
-            // Set the dialog icon.
-            dialogStage.getIcons().add(new Image("file:resources/images/calendar.png"));
 
             // Set the persons into the controller.
             BirthdayStatisticsController controller = loader.getController();
             controller.setPersonData(personData);
 
+            // Set the dialog icon.
+            dialogStage.getIcons().add(new Image("file:resources/images/calendar.png"));
+            
             dialogStage.show();
 
         } catch (IOException e) {
