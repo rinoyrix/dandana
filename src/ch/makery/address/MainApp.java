@@ -71,7 +71,10 @@ public class MainApp extends Application {
 
             // Show the scene containing the root layout.
             Scene scene = new Scene(rootLayout);
+            scene.getStylesheets().add("css/DarkTheme.css");
+//            scene.set
             primaryStage.setScene(scene);
+//            primaryStage.set/
             primaryStage.show();
         } catch (IOException e) {
             e.printStackTrace();
@@ -149,4 +152,9 @@ public class MainApp extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
+	public void setPersonFilePath(Object object) {
+		// TODO Auto-generated method stub
+		
+	}
 }

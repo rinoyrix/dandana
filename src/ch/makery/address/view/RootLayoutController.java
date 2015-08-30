@@ -2,11 +2,11 @@ package ch.makery.address.view;
 
 import java.io.File;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
-import javafx.stage.FileChooser;
-import ch.makery.address.MainApp;
+import javafx.fxml.*;
+import javafx.scene.control.*;
+import javafx.scene.control.Alert.*;
+import javafx.stage.*;
+import ch.makery.address.*;
 
 /**
  * The controller for the root layout. The root layout provides the basic
@@ -54,7 +54,7 @@ public class RootLayoutController {
         File file = fileChooser.showOpenDialog(mainApp.getPrimaryStage());
 
         if (file != null) {
-            mainApp.loadPersonDataFromFile(file);
+//            mainApp.loadPersonDataFromFile(file);
         }
     }
 
@@ -64,12 +64,12 @@ public class RootLayoutController {
      */
     @FXML
     private void handleSave() {
-        File personFile = mainApp.getPersonFilePath();
-        if (personFile != null) {
-            mainApp.savePersonDataToFile(personFile);
-        } else {
-            handleSaveAs();
-        }
+//        File personFile = mainApp.getPersonFilePath();
+//        if (personFile != null) {
+//            mainApp.savePersonDataToFile(personFile);
+//        } else {
+//            handleSaveAs();
+//        }
     }
 
     /**
@@ -92,7 +92,7 @@ public class RootLayoutController {
             if (!file.getPath().endsWith(".xml")) {
                 file = new File(file.getPath() + ".xml");
             }
-            mainApp.savePersonDataToFile(file);
+//            mainApp.savePersonDataToFile(file);
         }
     }
 
@@ -122,6 +122,6 @@ public class RootLayoutController {
      */
     @FXML
     private void handleShowBirthdayStatistics() {
-      mainApp.showBirthdayStatistics();
+//      mainApp.showBirthdayStatistics();
     }
 }

@@ -1,17 +1,17 @@
 package ch.makery.address.view;
 
-import java.text.DateFormatSymbols;
-import java.util.Arrays;
+import java.text.*;
+import java.util.*;
 import java.util.List;
 import java.util.Locale;
 
-import javafx.collections.FXCollections;
+import javafx.collections.*;
 import javafx.collections.ObservableList;
-import javafx.fxml.FXML;
-import javafx.scene.chart.BarChart;
+import javafx.fxml.*;
+import javafx.scene.chart.*;
 import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.XYChart;
-import ch.makery.address.model.Person;
+import ch.makery.address.model.*;
 
 /**
  * The controller for the birthday statistics view.
